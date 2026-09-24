@@ -72,6 +72,22 @@ account system behind it.
 open apps/docs/index.html          # or serve the folder with any static server
 ```
 
+## Deploying
+
+Each app is its own Vercel project, connected to this repository, so every
+pull request gets a Vercel preview per project and `main` deploys production.
+
+| Vercel project | Root Directory | Production |
+| --- | --- | --- |
+| `acme-storefront` | `apps/storefront` | https://acme-storefront-phi.vercel.app |
+| `acme-backoffice` | `apps/backoffice` | https://acme-backoffice.vercel.app |
+| `acme-docs` | `apps/docs` | https://acme-docs-self.vercel.app |
+
+The storefront and order desk read `packages/ui` from outside their Root
+Directory, which Vercel includes by default. `apps/storefront/vercel.json`
+sends every path to `index.html`; the order desk runs as Vercel's Express
+function from the app that `server.js` exports.
+
 ## What is deliberately missing
 
 - **No CI.** There is no `.github/` directory and no workflow file. Adding one

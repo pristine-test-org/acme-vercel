@@ -58,8 +58,13 @@ app.use((req, res) => {
   res.status(404).type('html').send(notFoundPage(req.path));
 });
 
-const port = process.env.PORT || 3001;
+// On Vercel the default export is the function; locally it listens on a port.
+if (!process.env.VERCEL) {
+  const port = process.env.PORT || 3001;
 
-app.listen(port, () => {
-  console.log(`Acme Water order desk on http://localhost:${port}`);
-});
+  app.listen(port, () => {
+    console.log(`Acme Water order desk on http://localhost:${port}`);
+  });
+}
+
+export default app;
