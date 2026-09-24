@@ -222,7 +222,7 @@ a {
   color: var(--sf-accent);
   font-size: var(--acme-text-sm);
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
