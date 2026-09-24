@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero__copy">
-          <p className="hero__eyebrow">Filters designed and made in Sheffield</p>
+          <p className="hero__eyebrow">Designed and made in Sheffield</p>
           <h1 className="hero__title">Tap water worth drinking</h1>
           <p className="hero__lead">
             Acme Water makes four filters and one refill pack. No subscriptions you have to cancel,
