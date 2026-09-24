@@ -219,7 +219,7 @@ a {
 }
 
 .hero__eyebrow {
-  color: var(--sf-accent);
+  color: #e11d48;
   font-size: var(--acme-text-sm);
   font-weight: 600;
   letter-spacing: 0.08em;
