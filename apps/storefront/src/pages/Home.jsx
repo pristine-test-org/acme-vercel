@@ -31,7 +31,7 @@ export default function Home() {
           <p className="hero__eyebrow">Filters made and tested in Sheffield</p>
           <h1 className="hero__title">Tap water worth drinking</h1>
           <p className="hero__lead">
-            Acme Water makes four filters and one refill pack. No subscriptions you have to cancel,
+            Four filters and one refill pack. No subscriptions to cancel,
             no app, and a cartridge that costs seven pounds instead of fifteen.
           </p>
           <div className="hero__actions">
